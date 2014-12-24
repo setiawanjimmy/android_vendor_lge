@@ -13,8 +13,13 @@
 # limitations under the License.
 
 PRODUCT_PACKAGES += \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    shutdownlistener \
+    TimeService \
+    UpdateSetting \
+    SprintHiddenMenu
 
 $(call inherit-product-if-exists, vendor/lge/hammerhead/lge/lge.mk)
+$(call inherit-product-if-exists, vendor/lge/hammerhead/lge/proprietary/Android.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/broadcom/broadcom.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/qcom/qcom.mk)
