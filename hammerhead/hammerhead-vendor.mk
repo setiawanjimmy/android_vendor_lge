@@ -17,7 +17,8 @@ PRODUCT_PACKAGES += \
     shutdownlistener \
     TimeService \
     UpdateSetting \
-    SprintHiddenMenu
+    SprintHiddenMenu \
+    OmaDmclient
 
 $(call inherit-product-if-exists, vendor/lge/hammerhead/lge/lge.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/lge/proprietary/Android.mk)
