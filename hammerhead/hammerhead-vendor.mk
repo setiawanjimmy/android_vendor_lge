@@ -1,5 +1,4 @@
 # Copyright 2013 The Android Open Source Project
-# Copyright 2013 The OmniROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,14 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Prebuilt Apps
-PRODUCT_PACKAGES += \
-    qcrilmsgtunnel \
-    TimeService \
-    shutdownlistener \
-    UpdateSetting \
-    SprintHiddenMenu \
-    OmaDmclient
-
-
-$(call inherit-product-if-exists, vendor/lge/hammerhead/device-partial.mk)
+$(call inherit-product-if-exists, vendor/lge/hammerhead/lge/lge.mk)
+$(call inherit-product-if-exists, vendor/lge/hammerhead/lge/proprietary/Android.mk)
+$(call inherit-product-if-exists, vendor/lge/hammerhead/broadcom/broadcom.mk)
+$(call inherit-product-if-exists, vendor/lge/hammerhead/qcom/qcom.mk)
+$(call inherit-product-if-exists, vendor/lge/hammerhead/qcom/proprietary/Android.mk)
