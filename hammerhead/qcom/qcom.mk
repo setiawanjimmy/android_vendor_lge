@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+PRODUCT_PACKAGES += \
+    TimeService
+
 # Qualcomm blob(s) necessary for Hammerhead hardware
 PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/qcom/proprietary/bridgemgrd:system/bin/bridgemgrd:qcom \

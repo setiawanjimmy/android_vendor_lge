@@ -14,8 +14,7 @@
 
 PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
-    shutdownlistener \
-    TimeService
+    shutdownlistener
 
 # LGE blob(s) necessary for Hammerhead hardware
 PRODUCT_COPY_FILES := \
