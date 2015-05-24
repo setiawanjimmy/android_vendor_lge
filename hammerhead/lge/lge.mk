@@ -14,7 +14,8 @@
 
 PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
-    shutdownlistener
+    shutdownlistener \
+    TimeService \
 
 # LGE blob(s) necessary for Hammerhead hardware
 PRODUCT_COPY_FILES := \
@@ -47,4 +48,3 @@ PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/lge/proprietary/libvss_nv_core.so:system/vendor/lib/libvss_nv_core.so:lge \
     vendor/lge/hammerhead/lge/proprietary/libvss_nv_idl.so:system/vendor/lib/libvss_nv_idl.so:lge \
     vendor/lge/hammerhead/lge/proprietary/libvss_nv_iface.so:system/vendor/lib/libvss_nv_iface.so:lge \
-

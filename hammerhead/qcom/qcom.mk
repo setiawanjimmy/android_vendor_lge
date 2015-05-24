@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_PACKAGES += \
-    TimeService
-
 # Qualcomm blob(s) necessary for Hammerhead hardware
 PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/qcom/proprietary/bridgemgrd:system/bin/bridgemgrd:qcom \
@@ -165,6 +162,7 @@ PRODUCT_COPY_FILES := \
     vendor/lge/hammerhead/qcom/proprietary/libqmi.so:system/vendor/lib/libqmi.so:qcom \
     vendor/lge/hammerhead/qcom/proprietary/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so:qcom \
     vendor/lge/hammerhead/qcom/proprietary/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so:qcom \
+    vendor/lge/hammerhead/qcom/proprietary/librpmb.so:system/vendor/lib/librpmb.so:qcom \
     vendor/lge/hammerhead/qcom/proprietary/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so:qcom \
     vendor/lge/hammerhead/qcom/proprietary/librs_adreno.so:system/vendor/lib/librs_adreno.so:qcom \
     vendor/lge/hammerhead/qcom/proprietary/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so:qcom \
