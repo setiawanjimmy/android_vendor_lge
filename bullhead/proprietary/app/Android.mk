@@ -1,4 +1,4 @@
-# Copyright (C) 2013-2015 The Android Open Source Project
+# Copyright (C) 2013-2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,29 +19,9 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),bullhead)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := atfwd
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := atfwd/atfwd.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MULTILIB := both
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := datastatusnotification
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := datastatusnotification/datastatusnotification.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MULTILIB := both
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ims
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := ims/ims.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -59,9 +39,9 @@ LOCAL_MULTILIB := both
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := qcrilmsgtunnel
+LOCAL_MODULE := ims
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := qcrilmsgtunnel/qcrilmsgtunnel.apk
+LOCAL_SRC_FILES := ims/ims.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -86,15 +66,6 @@ LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_MULTILIB := both
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SetupSmartDeviceOverlay
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := SetupSmartDeviceOverlay/SetupSmartDeviceOverlay.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
