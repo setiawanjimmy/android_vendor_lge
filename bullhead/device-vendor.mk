@@ -24,8 +24,7 @@ PRODUCT_PACKAGES += \
     RCSBootstraputil \
     RcsImsBootstraputil \
     SetupSmartDeviceOverlay \
-    TimeService \
-    Tycho
+    TimeService
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
